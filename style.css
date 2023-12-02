@@ -1,19 +1,40 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
 }
 
 .todo{
     width: 100%;
     max-width: 540px;
-    background: #f3f0f0;
+    background: #fff;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
 }
-
-.input{
+.todo h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
     flex: 1;
     border: none;
     outline: none;
@@ -21,16 +42,14 @@
     padding: 10px;
     font-weight: 14px;
 }
-
 ol li{
-   list-style: none;
-   font-size: 17px;
-   padding: 12px 8px 12px 50px;
-   user-select: none; 
-   cursor: pointer;
-   position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative ;
 }
-
 ol li::before{
     content: '';
     position: absolute;
@@ -40,13 +59,24 @@ ol li::before{
     background-size: cover;
     background-position: center;
     top: 12px;
-
+    left: 8px;
 }
+
 ol li.checked{
     color: #555;
     text-decoration: line-through;
 }
+ol li.checked::before{}
 
-li.checked::before{
+ol li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #000;
+    line-height: 40px;
+    text-align: center;
 
 }

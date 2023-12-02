@@ -5,18 +5,19 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="top"> todos </div>
-        <div class="todo">
-            <div class="row">
-            <input type="text" id="todo-input"placeholder="what needs to be done?"> 
+        <div class="container">
+            <div class="todo">
+                <h2>TODOS</h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="what needs to be done?">
+                    <ol id="list-container">
+                        <li class="checked">Task 1</li>
+                        <li>Task 2</li>
+                        <li>Task 3</li>
+                    </ol>
+                </div>
             </div>
-            <form>
-            <ol id="list-container">
-                <li>Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li>
-            </ol>
-            </form>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

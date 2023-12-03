@@ -8,22 +8,23 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: linear-gradient(135deg, #dcdfe2b9, rgb(125, 120, 125));
     padding: 10px;
 }
 
 .todo{
     width: 100%;
     max-width: 540px;
-    background: #fff;
+    background: #f7f5f5;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
 }
 .todo h2{
-    color: #002765;
+    color: #7db6df;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: center;
 }
 .row{
     display: flex;
@@ -31,7 +32,7 @@
     justify-content: space-between;
     background: #edeef0;
     border-radius: 30px;
-    padding-left: 20px;
+    padding-left: 30px;
     margin-bottom: 25px;
 }
 input{
@@ -42,7 +43,7 @@ input{
     padding: 10px;
     font-weight: 14px;
 }
-ol li{
+ul li{
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -50,10 +51,10 @@ ol li{
     cursor: pointer;
     position: relative ;
 }
-ol li::before{
+ul li::before{
     content: '';
     position: absolute;
-    height: 28px;
+    height: 8px;
     width: 28px;
     border-radius: 50%;
     background-size: cover;
@@ -62,13 +63,13 @@ ol li::before{
     left: 8px;
 }
 
-ol li.checked{
+ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
-ol li.checked::before{}
+u li.checked::before{}
 
-ol li span{
+ul li span{
     position: absolute;
     right: 0;
     top: 5px;
@@ -78,5 +79,9 @@ ol li span{
     color: #000;
     line-height: 40px;
     text-align: center;
+    border-radius: 50%;
+}
 
+ul li span:hover{
+    background:  #edeef0;
 }

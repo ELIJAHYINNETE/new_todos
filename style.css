@@ -12,7 +12,7 @@
     padding: 10px;
 }
 
-.btn{
+#btn{
     border: none;
     cursor: pointer;
     position: absolute;
@@ -76,7 +76,6 @@ ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
-u li.checked::before{}
 
 ul li span{
     position: absolute;

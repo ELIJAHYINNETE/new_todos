@@ -1,18 +1,24 @@
-function btn() {
+function addTask() {
   var taskInput = document.getElementById('input-box');
+  var todoList = document.getElementById('list-container');
+  //var addBtn = document.getElementById('btn');
+
  if (taskInput.value.trim() !== '')
 {
   var taskItem = document.createElement('li');
-  taskItem .className = 'todo-item';
+  taskItem.className = 'todo-item';
   var taskText = document.createElement('span');
-  taskText.textContent = input-box.value;
-  taskItem.appendChild(taskText);
+    taskText .textContent = taskInput.value;
+    taskItem .appendChild(taskText);
 
-
+    var deleteButton = document.createElement('button');
+    deleteButton .className = 'delete-button';
+    deleteButton .textContent = 'Delete';
+    deleteButton .onclick = function ()
   {
-    taskList.removeChild(taskItem);
+    todoList.removeChild(taskItem);
   }
-  taskList.appendChild(taskItem);
+  todoList.appendChild(taskItem);
   taskInput.value='';
 
 }

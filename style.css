@@ -12,6 +12,15 @@
     padding: 10px;
 }
 
+.btn{
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    rotate: 180deg;
+}
+
 .todo{
     width: 100%;
     max-width: 540px;
@@ -40,7 +49,7 @@ input{
     border: none;
     outline: none;
     background: transparent;
-    padding: 10px;
+    padding: 20px;
     font-weight: 14px;
 }
 ul li{

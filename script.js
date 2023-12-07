@@ -28,11 +28,11 @@ function addTask() {
   
   };
 
-let keypress = document.querySelector("input-box");
+let keypress = document.querySelector("#input-box");
 keypress.addEventListener('keydown',function (event){
   if (event.keyCode === 13){
     event.preventDefault();
-    addListItem(event);
+    addTask(event);
 
 
   }

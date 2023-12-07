@@ -6,16 +6,16 @@ function addTask() {
   if (taskInput.value.trim() !== ''){
     var taskItem = document.createElement('li');
     taskItem.className = 'todo-item';
-    var taskText = document.createElement('span');
-      taskText .textContent = taskInput.value;
-      taskItem .appendChild(taskText);
+    var taskText=document.createElement('span');
+      taskText.textContent = taskInput.value;
+      taskItem.appendChild(taskText);
 
       
   
       var deleteButton = document.createElement('button');
-       deleteButton .className = 'delete-button';
-      deleteButton .textContent = 'Delete';
-      deleteButton .onclick = function ()
+       deleteButton.className = 'delete-button';
+      deleteButton.textContent = 'Delete';
+      deleteButton.onclick = function ()
     {
       todoList.removeChild(taskItem);
     }

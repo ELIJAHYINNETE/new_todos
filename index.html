@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO </title>
+        <title>TODO</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container">
+        
+            <div id="main-box">
             <div class="todo">
                 <h2>TODOS</h2>
+            </div>
 
                 <div class="row">
-                    <input type="text" id="input-box" placeholder="what needs to be done?"  >
-                   <button id="btn" onclick="addTask()">^</button>
-                   
+                    <h4 id="btn">^</h4>
+                    <input type="text" id="input-box" placeholder="what needs to be done?" value="" >
+                  
                 </div>
+                
 
                 <ul id="list-container">
-                    
                 </ul>
                 <div class="bottom">
-                    <button id="all">ALL</button>
-                    <button id="act">Active</button>
-                    <button id="comp">Completed</button>
+                    <h3 id="itemsEl">No item</h3>
+                    <div id="theButtons">
+                        <button id="all">ALL</button>
+                        <button id="act">Active</button>
+                        <button id="comp">Completed</button>
+                        <button id="clearEl">Clear All</button>
+                    </div>
+                    <h3>clear completed</h3>
+
+                   
                    </div>
-            </div>
+            
+       
             
         </div>
         <script src="script.js"></script>
